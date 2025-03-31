@@ -1,0 +1,44 @@
+<nav class="guide-nav">
+    <div class="nav-container">
+      <a href="/" class="logo">Guia de Viagem</a>
+      
+      <!-- Menu para desktop -->
+      <ul class="nav-links">
+        @for (item of menuItems; track item.path) {
+          <li>
+            <a 
+              [routerLink]="item.path" 
+              routerLinkActive="active"
+              class="nav-link">
+              {{ item.label }}
+            </a>
+          </li>
+        }
+      </ul>
+      
+      <!-- Botão de menu mobile (aparece apenas em telas pequenas) -->
+      <button class="menu-toggle" (click)="toggleMenu()" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <!-- Menu para mobile -->
+      <ul class="mobile-nav-links" [class.open]="isMenuOpen">
+        @for (item of menuItems; track item.path) {
+          <li>
+            <a 
+              [routerLink]="item.path" 
+              routerLinkActive="active"
+              class="nav-link"
+              (click)="toggleMenu()">
+              {{ item.label }}
+            </a>
+          </li>
+        }
+      </ul>
+
+
+
+    </div>
+  </nav>

@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+main {
+    min-height: calc(100vh - 120px);
+  }
+
+
+  :root {
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --cinza-escuro: #333333;
+    --cinza-medio: #666666;
+    --cinza-claro: #F5F5F5;
+    --detalhe: #8A6D3B; 
+  }
+  
+  body {
+    background-color: var(--branco);
+    color: var(--preto);
+    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+  .main-content {
+    min-height: calc(100vh - 120px); 
+  }

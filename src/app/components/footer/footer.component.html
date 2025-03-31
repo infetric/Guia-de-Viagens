@@ -1,0 +1,27 @@
+<footer class="guide-footer">
+    <div class="footer-container">
+      <div class="newsletter-section">
+        <h3>Assine nossa newsletter</h3>
+        <p>Receba as melhores dicas de viagem diretamente no seu e-mail</p>
+        <form (ngSubmit)="submitNewsletter()" class="newsletter-form">
+          <input 
+            type="email" 
+            [(ngModel)]="email"
+            name="email"
+            placeholder="Digite seu E-mail"
+            required>
+          <button type="submit">Assinar</button>
+        </form>
+      </div>
+      
+      <div class="footer-links">
+        <a href="#" class="footer-link">Sobre Nós</a>
+        <a href="#" class="footer-link">Contato</a>
+        <a href="#" class="footer-link">Termos de Uso</a>
+      </div>
+      
+      <div class="copyright">
+        © 2025 Guia de Viagem. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>

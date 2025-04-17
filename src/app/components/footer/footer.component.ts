@@ -13,6 +13,6 @@ export class FooterComponent {
 
   submitNewsletter() {
     console.log('E-mail cadastrado:', this.email);
-    // Implemente a lógica de API aqui
+    
   }
 }

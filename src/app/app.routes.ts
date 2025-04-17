@@ -7,5 +7,5 @@ export const routes: Routes = [
     component: HomeComponent,
     title: 'Guia de Viagem' 
   },
-  // Adicione novas rotas conforme necessário
+
 ];
